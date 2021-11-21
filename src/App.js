@@ -7,15 +7,13 @@ function App() {
   const [menuItem, setMenuItem] = useState(CourseData);
   const [mode, setMode] = useState('Dark-Mode');
   const backgroundMode = () => {
-    let value;
     if (mode === 'Dark-Mode') {
-      value = 'Light-Mode';
+      setMode('Light-Mode');
       document.body.style = `background:var(--clr-grey-1);color:var(--clr-grey-9)`;
     } else {
-      value = 'Dark-Mode';
+      setMode('Dark-Mode');
       document.body.style = `color:teal;background:var(--clr-grey-10)`;
     }
-    return setMode(value);
   };
 
   const filterMenuItems = (category) => {
