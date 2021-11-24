@@ -233,12 +233,11 @@ Menu
   .photo {
     height: 175px;
   }
+}
+@media screen and (max-width: 580px) {
     .btn-container{
     display:flex;
     flex-direction: column
-  }
-  .Dark-Mode,.Light-Mode{
-    align-item:center
   }
 }
 @media screen and (min-width: 1200px) {
